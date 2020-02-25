@@ -16,4 +16,13 @@ def load_image( filename ) :
     except:
         print:("Load _Image(): Unable to open" + filename)
         return None
+
+def load_image( filename ) :
+    try:
+        myimage = Image.open(filename)
+        myimage.load()
+        return myimage
+    except:
+        print:("Save_Image(): Unable to open" + filename)
+        return None
     
