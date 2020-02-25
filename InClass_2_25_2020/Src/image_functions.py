@@ -24,5 +24,9 @@ def load_image( filename ) :
         return myimage
     except:
         print:("Save_Image(): Unable to open" + filename)
-        return None
+        
     
+def crop_image(imageObject, cropRegion):
+    im = Image.open("SiriusAndViolet.jpg")  
+    im_c = im.crop((200,300,400,500)) # (left, top, right, bottom) it's a tuple!
+    return im_c
