@@ -17,6 +17,6 @@ print(im.width, im.height, im.mode, im.format)  # Display some info about the im
 # 3. Call show to display the results
 
 im = Image.open("SiriusAndViolet.jpg")
-im_c = im.crop((200,300,400,500))
-im.show()
+im_cropped = crop_image(im, (200,300,400,500))
+im_cropped.show()
 
