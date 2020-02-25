@@ -17,7 +17,7 @@ def load_image( filename ) :
         print:("Load _Image(): Unable to open" + filename)
         return None
 
-def load_image( filename ) :
+def save_image( filename ) :
     try:
         myimage = Image.open(filename)
         myimage.load()
